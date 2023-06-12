@@ -1,0 +1,38 @@
+﻿@model List<Asp.Net_Core_Homework.Models.Domain.Doctor>
+   
+@{
+}
+<h2>Doctors</h2>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Phone Number</th>
+			<th>Date Of Birth</th>
+			<th>Branch</th>
+			<th>Number Of Patients</th>
+			<th> </th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var doctor in Model)
+		{
+			<tr>
+                <td>@doctor.Id</td>
+				<td>@doctor.Name</td>
+				<td>@doctor.Email</td>
+				<td>@doctor.PhoneNumber</td>
+				<td>@doctor.DateOfBirth.ToString("dd.MM.yyyy")</td>
+				<td>@doctor.Branch</td>
+				<td>@doctor.NumberOfPatients</td>
+				<td><a href="Doctors/View/@doctor.Id">View</a></td>
+			</tr>
+		}
+
+
+	</tbody>
+
+</table>

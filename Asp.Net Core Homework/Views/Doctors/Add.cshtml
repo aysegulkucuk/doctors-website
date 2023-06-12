@@ -1,0 +1,36 @@
+﻿@model Asp.Net_Core_Homework.Models.AddDoctorViewModel
+    
+
+@{
+}
+
+<h2>Add Doctor</h2>
+
+<form method="post" action="Add">
+    <div class="form-group">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">Phone Number</label>
+        <input type="number" class="form-control" asp-for="PhoneNumber">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">Branch</label>
+        <input type="text" class="form-control" asp-for="Branch">
+    </div>
+    <div class="form-group">
+        <label for="" class="form-label">Number Of Patients</label>
+        <input type="number" class="form-control" asp-for="NumberOfPatients">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
